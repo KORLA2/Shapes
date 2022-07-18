@@ -4,8 +4,7 @@ let can = document.getElementsByClassName('can')[0];
 let ctx = can.getContext('2d');
 can.width = window.innerWidth;
 can.height = window.innerHeight;
-// ctx.beginPath()
-// ctx.save();
+
 ctx.shadowOffsetX = 10;
 ctx.shadowOffsetY = 10;
 ctx.shadowBlur = 5;
@@ -25,8 +24,7 @@ h+=20;
         ctx.lineTo(0, -100)
 
     }
-    // ctx.rotate(Math.PI / 6)
-    // ctx.lineTo(0, -100)
+ 
     ctx.closePath()
     ctx.fillStyle = `hsl(${h},100%,50%)`
     ctx.fill()
